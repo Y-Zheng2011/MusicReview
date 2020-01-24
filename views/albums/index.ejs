@@ -1,0 +1,33 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+    <header class="jumbotron">
+        <h1>MusicReview</h1>
+        <p>Albums</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="/albums/new">Add New Album</a>
+        </p>
+    </header>
+    <div class="row text-center">
+        <% albums.forEach(function(album){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                    <a href="/albums/<%= album.ARTIST_NAME + '&' + album.ALBUM_NAME%>">
+                        <img src="<%= album.ALBUM_COVER %>" >
+                    </a>
+                    <div class="caption">
+                        <h4><%= album.ALBUM_NAME %></h4>
+                        <h4><%= album.ARTIST_NAME %></h4>
+                    </div>
+                    <p>
+                        <a href="/albums/<%= album.ARTIST_NAME + '&' + album.ALBUM_NAME%>" class="btn btn-primary">More Info</a>
+                    </p>
+                </div>
+            </div>
+        <% }); %> 
+        </dive>
+    </div>
+   
+</div>
+
+<%- include("../partials/footer") %>

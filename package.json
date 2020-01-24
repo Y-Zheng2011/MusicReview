@@ -1,0 +1,23 @@
+{
+  "name": "v1",
+  "version": "1.0.0",
+  "description": "v1",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Y-Zheng2011",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.606.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "method-override": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
